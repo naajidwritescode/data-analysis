@@ -1,0 +1,14 @@
+| 🔢 Step | 📌 Task                     | 🧠 Description                                  | 🛠 Tools Used                                |
+| ------- | --------------------------- | ----------------------------------------------- | -------------------------------------------- |
+| 1       | **Load the dataset**        | Load the CSV into a DataFrame                   | `pandas.read_csv()`                          |
+| 2       | **View basic info**         | Look at column names, null values, data types   | `df.info()`, `df.head()`, `df.describe()`    |
+| 3       | **Clean missing data**      | Drop or fill missing values                     | `df.dropna()`, `df.fillna()`                 |
+| 4       | **Check unique types**      | Count Movies vs TV Shows                        | `df['type'].value_counts()`                  |
+| 5       | **Top genres**              | Find most frequent genres in `listed_in` column | `df['listed_in'].str.split()` and explode    |
+| 6       | **Top countries**           | Find which countries produce the most content   | `df['country'].value_counts()`               |
+| 7       | **Trend over time**         | Number of shows/movies released per year        | Group by `release_year` and count            |
+| 8       | **Top directors or actors** | Who directed the most Netflix titles?           | `df['director'].value_counts()`              |
+| 9       | **Duration analysis**       | Compare average duration of movies and TV shows | Use `df['duration']` + NumPy to convert time |
+| 10      | **Visualize results**       | Create bar, pie, or line charts                 | `matplotlib.pyplot`, `seaborn`               |
+| 11      | **Conclusions**             | Write insights in Markdown cells                | Markdown in Jupyter Notebook                 |
+| 12      | **Push to GitHub**          | Upload the notebook and README                  | Use Git/GitHub                               |
