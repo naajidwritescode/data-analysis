@@ -28,9 +28,3 @@ This project analyzes a Netflix dataset to uncover insights about content types,
 - **Top directors:** Bar chart of the three most prolific directors.
 - **Average duration:** Calculated average movie length in minutes and average TV show length in seasons.
 
----
-
-## How to Run
-
-1. Make sure you have Python 3 installed.
-2. Install required packages:
