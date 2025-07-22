@@ -1,73 +1,36 @@
-📊 Netflix Data Analysis Project
-This project analyzes the Netflix catalog data using Python and pandas to extract insights on content type, popular genres, trends over the years, average durations, and more. It uses the official netflix_titles.csv dataset from Kaggle.
+# Netflix Data Analysis
 
-🔍 Project Overview
-This script performs:
+## Overview
+This project analyzes a Netflix dataset to uncover insights about content types, genres, countries of production, release trends, and durations of movies and TV shows. It demonstrates data cleaning, exploration, and visualization using Python libraries **Pandas**, **NumPy**, and **Matplotlib**.
 
-Data cleaning (handling missing values)
+---
 
-Analysis of:
+## Dataset
+- The dataset used is `netflix_titles.csv`.
+- It contains metadata about Netflix movies and TV shows including title, director, cast, country, release year, duration, genres, and ratings.
 
-Total number of Movies vs. TV Shows
+---
 
-Top genres on the platform
+## Key Features
 
-Top countries producing the most content
+### Data Cleaning
+- Removed duplicate records.
+- Handled missing values:
+  - Filled missing `director` and `cast` with `"unknown"` or `"not available"`.
+  - Imputed missing `country` and `rating` with the mode (most common value).
+  - Dropped rows missing critical `duration` or `date_added` values.
 
-Release year trends
+### Data Exploration & Visualizations
+- **Movie vs TV Show distribution:** Pie chart showing the proportion of movies and TV shows.
+- **Top genres:** Bar chart of the three most frequent genres.
+- **Top countries producing Netflix content:** Bar chart of top 3 countries.
+- **Content release trend over time:** Line chart showing number of shows released per year.
+- **Top directors:** Bar chart of the three most prolific directors.
+- **Average duration:** Calculated average movie length in minutes and average TV show length in seasons.
 
-Top directors with most titles
+---
 
-Average duration of Movies and TV Shows
+## How to Run
 
-Exports a cleaned version of the dataset
-
-📁 Files
-File Name	Description
-main.py	Main script for cleaning and analyzing Netflix data.
-netflix_titles.csv	Original dataset from Kaggle containing Netflix catalog details.
-cleaned_netflix_data.csv	Cleaned dataset after handling missing values and formatting.
-README.md	Documentation of the project.
-
-🧠 Skills Used
-Python programming
-
-pandas for data manipulation
-
-numpy for numeric operations
-
-Basic data cleaning and analysis
-
-Data storytelling through print summaries
-
-🧹 Data Cleaning
-The script handles missing values by:
-
-Column	Strategy
-director	Filled with 'unknown'
-cast	Filled with 'not available'
-country	Filled with the most frequent country
-rating	Filled with the most frequent rating
-duration	Dropped rows with missing values
-date_added	Dropped rows with missing values
-
-📊 Key Insights
-Total Movies vs TV Shows on Netflix
-
-Top 3 Genres listed in the catalog
-
-Top 3 Countries with most Netflix content
-
-Top 3 Release Years with highest content production
-
-Top 3 Directors with the most shows or movies
-
-Average Movie Duration in minutes
-
-Average TV Show Duration in seasons
-
-📚 Dataset Source:
-Netflix Titles Dataset on Kaggle
-
-👨‍💻 Author:
-Naajid Monowar Hossain
+1. Make sure you have Python 3 installed.
+2. Install required packages:
